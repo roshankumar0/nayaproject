@@ -1,0 +1,12 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+body{
+    background: red;
+    
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+}

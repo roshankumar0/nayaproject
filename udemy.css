@@ -1,0 +1,73 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+body{
+    background: #f0f2f5
+    
+}
+form{
+    width:396px;
+    position: absolute;
+    top: 50px;
+    right: 250px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    padding: 20px 0 28px;
+    width: 100%;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    margin-top: 12px;
+    outline-color:#1877f2;
+}
+button{
+    background-color:#1877f2;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    margin: 20px 0 0;
+    padding: 8px 0;
+    width: 85%;
+    color: #FFFFFF;
+} 
+.creat a{
+    background: #42B72A;
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 6px;
+}
+.ended{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.ended a{
+    color: black;
+    text-decoration: none;
+}
+.ended a:hover{
+    text-decoration: underline;
+}
+hr{
+    width:316px;
+}
+

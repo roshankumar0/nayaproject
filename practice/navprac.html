@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0; padding: 0; box-sizing: border-box; list-style: none; text-decoration: none;
+        }
+        .header-2{
+            background-color: red;
+            height: 60px;
+            width: 100%;
+            position: fixed;
+            z-index: 10;
+            top: 0;
+        }
+        main{
+            height: 100%;
+            margin-top: 60px;
+            padding: 10px 50px;
+        }
+        #side_bar{
+            background-color: #555;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 250px;
+            margin-top: 60px;
+            transform: translateY(-350px);
+            transition: all 0.5s ;
+            
+        }
+        nav ul li{
+            border-bottom: 1px solid gray;
+        }
+        a{
+            display: block;
+            color: #777;
+            padding: 20px;
+        }
+       #cross:checked ~ #side_bar{
+           transform: translateY(0);
+       }
+       .toggle{
+            height: 20px;
+            width: 20px;
+            z-index: 20;
+            position: fixed;
+            top: 20px;
+            left: 15px;
+        }
+        .spinner{
+            height: 3px;
+            margin-top: 3px;
+            transition: all 0.5s ease-in-out;
+            background-color: white;
+
+        }
+        #cross:checked ~ .toggle> .middle{
+             opacity: 0;
+        }
+        #cross:checked ~ .toggle> .top{
+             transform: rotate(135deg);
+             margin-top: 8px;
+        }
+        #cross:checked ~ .toggle> .bottom{
+             transform: rotate(-135deg);
+             margin-top: -9px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-2"></div>
+    <input type="checkbox"  id="cross">
+    <label for="cross" class="toggle">
+    <div class="spinner top"></div>
+    <div class="spinner middle"></div>
+    <div class="spinner bottom"></div>
+    </label>
+    <header id="side_bar">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+                <li><a href="#">COURSES</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>pure css toggle bar</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, odio quibusdam placeat laborum repellendus veniam? Quidem reiciendis alias distinctio beatae porro veritatis repudiandae soluta iure molestiae explicabo tempora, iusto magni nulla quisquam, cumque quod hic velit error? Esse dolor perspiciatis ut illum aspernatur quis error ipsam aut, quos earum dignissimos pariatur. Porro, totam. Ipsa sapiente dicta saepe officiis, quas recusandae nihil fugit nesciunt est! Odio, ipsa tempore. Iusto, dolorum molestias. Vel, in. Aperiam quos porro laborum odit soluta ratione facilis sed dolore aliquam voluptatibus quas accusantium repellat fuga consectetur vitae delectus, quidem reprehenderit enim doloribus blanditiis est excepturi. Eveniet consequatur nulla illo placeat! Suscipit, temporibus! Dolorum deleniti eius laboriosam et, molestiae at amet magnam, placeat sed voluptatem velit accusamus nesciunt est dolor eligendi corporis, sit ad fugit perferendis quas tempore assumenda ullam ducimus hic. Nemo ipsum voluptas, perferendis exercitationem minus autem quam porro, ratione saepe ducimus, adipisci quas libero sint vero corporis iste asperiores cumque? Unde magni illum officiis suscipit et quis voluptas eius, provident inventore quam accusantium? Sit a voluptatem id voluptas veniam reiciendis consequatur rerum eaque ipsum labore magni, necessitatibus temporibus possimus aperiam delectus. Nam harum, quidem vero earum sequi dolores id quo cum nobis vel voluptates dolore.</p>
+    </main>
+</body>
+</html>
